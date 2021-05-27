@@ -1,3 +1,5 @@
+# load those rules in the workspace first, and then BUILD file need to load them
+# again to use them
 load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 
 go_library(
